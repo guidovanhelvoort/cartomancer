@@ -11,5 +11,11 @@ Setup
 
 Prompt used is based on https://www.chainbrainai.com/tarot-card-reading 
 
+![example question input](https://github.com/guidovanhelvoort/cartomancer/blob/main/images/cartomancer01.png?raw=true)
+
+![example card](https://github.com/guidovanhelvoort/cartomancer/blob/main/images/cartomancer02.png?raw=true)
+
+![example card interpretation reading](https://github.com/guidovanhelvoort/cartomancer/blob/main/images/cartomancer03.png?raw=true)
+
 
 ![background to cartomancer](https://github.com/guidovanhelvoort/cartomancer/blob/main/client/img/bg.png?raw=true)
