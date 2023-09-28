@@ -10,3 +10,6 @@ Setup
 * npm run start 
 
 Prompt used is based on https://www.chainbrainai.com/tarot-card-reading 
+
+
+![alt text](https://github.com/guidovanhelvoort/cartomancer/blob/main/client/img/bg.png?raw=true)
