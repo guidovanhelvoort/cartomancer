@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Tarot Card readings based on Chat GPT",
   "main": "index.js",
+  "name": "cartomancer",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"cd server && node index.js\" \"cd client && npm run start\""
@@ -12,7 +13,7 @@
     "chatgpt"
   ],
   "author": "guidovanhelvoort",
-  "license": "ISC",
+  "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "concurrently": "^8.2.1"
   }
