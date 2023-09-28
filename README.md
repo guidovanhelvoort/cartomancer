@@ -6,10 +6,10 @@ Requirements
 
 Setup
 * Add your chatgpt key under server/.env : OPENAI_API_KEY=[YOUR KEY]
-* install live-server globally
+* install [live-server](https://www.npmjs.com/package/live-server) globally
 * npm run start 
 
 Prompt used is based on https://www.chainbrainai.com/tarot-card-reading 
 
 
-![alt text](https://github.com/guidovanhelvoort/cartomancer/blob/main/client/img/bg.png?raw=true)
+![background to cartomancer](https://github.com/guidovanhelvoort/cartomancer/blob/main/client/img/bg.png?raw=true)
