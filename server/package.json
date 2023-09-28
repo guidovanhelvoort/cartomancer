@@ -10,7 +10,7 @@
     "tarot",
     "chatgpt"
   ],
-  "author": "moustachedelait",
+  "author": "guidovanhelvoort",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

@@ -11,7 +11,7 @@
     "tarot",
     "chatgpt"
   ],
-  "author": "moustachedelait",
+  "author": "guidovanhelvoort",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.1"
