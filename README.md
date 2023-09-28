@@ -1,6 +1,10 @@
 # cartomancer
 chatgpt based tarot card readings
 
+Requirements
+* An openAI account with API access (https://platform.openai.com/account/billing/overview)
+
+Setup
 * Add your chatgpt key under server/.env : OPENAI_API_KEY=[YOUR KEY]
 * install live-server globally
 * npm run start 
