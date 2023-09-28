@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/img/favicon.ico" type="image/x-icon" rel="icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Creepster:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Eater:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lacquer:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Cartomancer</title>
+  </head>
+
+  <body class="bg">
+    <h1 class="header">CARTOMANCER</h1>
+    <main class="full">
+      <section id="inputs">
+        <div class="input__field">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Hello dear, what's your name?"
+            required
+            autocomplete="off"
+          />
+          <label for="question">Question</label>
+          <input
+            type="text"
+            id="question"
+            placeholder="What would you like to get answered?"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="input__button">
+          <button id="submit" class="btn btn--green">Read the cards</button>
+        </div>
+      </section>
+      <div id="waiting"></div>
+      <section class="">
+        <div id="reading"></div>
+        <div class="input__button">
+          <button id="clear" class="btn btn--green">
+            Hide this truth from others
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

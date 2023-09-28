@@ -1,0 +1,19 @@
+{
+  "name": "cartomancer",
+  "version": "1.0.0",
+  "description": "Tarot Card readings based on Chat GPT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd server && node index.js\" \"cd client && npm run start\""
+  },
+  "keywords": [
+    "tarot",
+    "chatgpt"
+  ],
+  "author": "moustachedelait",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}

@@ -1,0 +1,203 @@
+/* Reset default styles */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: Lacquer;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Creepster;
+  color: red;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+.header {
+  margin: 0;
+}
+
+/* Background image */
+.bg {
+  background-image: url("../img/bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Full content container */
+.full {
+  background: rgba(30, 60, 90, 0.5);
+  border-radius: 10px;
+  height: calc(100% - 150px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0 30px 30px 30px;
+  padding: 30px;
+}
+
+.full * {
+  opacity: 1; /* Change opacity to 1% */
+}
+
+/* Tarot reading styles */
+#tarot-reading {
+  font-size: 24px;
+}
+
+#tarot-reading .card-title,
+#tarot-reading .interpretation-title {
+  font-family: Eater;
+  font-size: 28px;
+  text-decoration: underline;
+  color: #b286db;
+  background-color: rgba(30, 60, 90, 0.75);
+  display: block;
+  border-radius: 10px;
+  padding: 10px 0 10px 30px;
+}
+
+#tarot-reading .card-image,
+#tarot-reading img {
+  width: 290px;
+  border-radius: 10px;
+  border: 5px solid black;
+  object-fit: none;
+}
+
+#tarot-reading .card-text {
+  width: calc(100% - 400px);
+  margin-left: 30px;
+  background-color: rgba(30, 60, 90, 0.75);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 30px;
+}
+
+#tarot-reading .card-image,
+#tarot-reading .card-text {
+  float: left;
+}
+
+#tarot-reading .card,
+#tarot-reading .interpretation {
+  clear: both;
+}
+
+#tarot-reading .interpretation {
+  padding: 30px;
+  background-color: rgba(30, 60, 90, 0.75);
+  display: inline-block;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+/* Input field styles */
+#inputs {
+  border-radius: 10px;
+}
+
+#name,
+#question {
+  background-color: rgba(30, 60, 90, 0.75);
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-family: Lacquer;
+  font-size: 24px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+#submit,
+#clear {
+  background-color: rgba(30, 60, 90, 0.75);
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-family: Lacquer;
+  font-size: 24px;
+  padding: 10px 0;
+  width: 50%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#submit:hover,
+#clear:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+#submit:active,
+#clear:active {
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Hidden elements */
+#reading,
+#waiting,
+#clear {
+  display: none;
+}
+
+#waiting {
+  border-radius: 222px;
+  height: 445px;
+  width: 445px;
+  background-image: url("../img/eye.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -218px;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation: spin 3s infinite;
+  animation: spin 3s infinite;
+  mix-blend-mode: hard-light;
+  --mask: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0) 95%,
+      rgba(0, 0, 0, 0) 0
+    )
+    100% 50% / 100% 100% repeat-x;
+
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#clear {
+  display: none;
+}
